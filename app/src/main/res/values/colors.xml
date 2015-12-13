@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="statusBarColor">#B73328</color>
+    <color name="titleBackgroundColor">#C94038</color>
+    <color name="titleTextColor">#ffffff</color>
+    <color name="appBackgroundColor">#F9F9F9</color>
+
+    <color name="listViewNameColor">#737373</color>
+    <color name="listViewAddressColor">#868686</color>
+
+</resources>

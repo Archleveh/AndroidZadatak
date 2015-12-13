@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- ListRow Left side Thumbnail image -->
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="16dip"
+        android:paddingTop="15dip"
+        android:paddingBottom="20dip">
+        <ImageView
+            android:id="@+id/ivAccomodationThumbnail"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAccomodationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:text="Test naslov"
+        android:textColor="@color/listViewNameColor"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvAccomodationAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Test adresa"
+        android:textColor="@color/listViewAddressColor"
+        android:layout_alignStart="@+id/tvAccomodationName"
+        android:layout_below="@+id/tvAccomodationName"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="10dip"
+        android:paddingRight="10dip"/>
+
+
+</RelativeLayout>

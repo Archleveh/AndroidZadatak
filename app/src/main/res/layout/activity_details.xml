@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    tools:context="com.example.user.androidzadatak.DetailsActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dip"
+        android:id="@+id/imageDetailsMain"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="28dip"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/imageDetailsMain"
+        android:layout_marginLeft="16dip"
+        android:layout_marginTop="8dip"
+        android:layout_marginBottom="12dip"
+        android:paddingTop="10dip"
+        android:numStars="5"
+        android:stepSize="1"
+        android:progressDrawable="@layout/rating_stars" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/listViewNameColor"
+        android:textSize="20dip"
+        android:textStyle="bold"
+        android:text="Medium Text"
+        android:id="@+id/tvDetailsName"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignStart="@+id/ratingBar"
+        android:layout_alignEnd="@+id/ratingBar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="3dip"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tvDetailsAddress"
+        android:layout_below="@+id/tvDetailsName"
+        android:layout_alignStart="@+id/tvDetailsName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tvDetailsDescription"
+        android:layout_below="@+id/tvDetailsAddress"
+        android:layout_alignStart="@+id/tvDetailsAddress"
+        android:layout_alignEnd="@+id/tvDetailsAddress"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridView"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:paddingBottom="20dip"
+            android:numColumns="auto_fit"
+            android:columnWidth="100dp"
+            android:stretchMode="columnWidth"
+            android:layout_below="@id/tvDetailsDescription"
+            android:layout_alignStart="@+id/tvDetailsDescription"
+            android:layout_alignEnd="@+id/tvDetailsDescription"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/ivExpandedImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
